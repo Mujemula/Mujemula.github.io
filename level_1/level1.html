@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathias Anniversary - Galla Date</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Salsa', cursive;
+            margin: 0;
+            padding: 0;
+            background-image: url('../website_pictures/IMG_7027.JPG'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas1">Mathias_anneversary</canvas>
+
+    <img id="player" src="charecters/mathias.png" alt="Player character">
+    <img id="layer1" src="town/layer-1.png" alt="Layer1">
+    <img id="layer2" src="town/layer-2.png" alt="Layer2">
+    <img id="layer3" src="town/layer-3.png" alt="Layer3">
+    <img id="layer4" src="town/layer-4.png" alt="Layer4">
+    <img id="layer5" src="town/layer-5.png" alt="Layer5">
+    <img id="enemy_bee" src="charecters/bees.png" alt="Bees">
+    <img id="ground_rotten_flower" src="charecters/rotten_ground_flower.png" alt="Rotten ground flower">
+    <img id="tree" src="charecters/tree.png" alt="Tree">
+    <img id="moving_ice" src="charecters/ice.png" alt="Moving Ice Test">
+    <img id="ground_flower" src="charecters/ground_flower.png" alt="Ground Flower">
+    <img id="collisionAnimation" src="charecters/collision.png" alt="Collision Animation">
+    <img id="heart" src="charecters/heart.png" alt="Heart">
+    <img id="car" src="charecters/car.png" alt="Car">
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const difficulty = urlParams.get('difficulty');
+        localStorage.setItem('gameDifficulty', difficulty);
+    </script>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathias Anniversary - Start</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: 'Salsa', cursive;
+            background-image: url('../website_pictures/IMG_7027.JPG'); 
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        .button {
+            padding: 20px 40px;
+            font-size: 24px;
+            color: #fff;
+            background-color: #ff9100;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .button:hover {
+            background-color: #b37400;
+        }
+    </style>
+</head>
+<body>
+    <button class="button" onclick="startGame('easy')">Easy</button>
+    <button class="button" onclick="startGame('medium')">Medium</button>
+    <button class="button" onclick="startGame('hard')">Hard</button>
+
+    <script>
+        function startGame(difficulty) {
+            localStorage.setItem('gameDifficulty', difficulty);
+            window.location.href = `level1.html?difficulty=${difficulty}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+    <link rel="icon" href="../website_pictures/favicon.ico" type="image/x-icon">
+    <title>Mathias Årsdag - Vores Første År</title>
+    <style>
+        body {
+            font-family: 'Salsa', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #ffddae;
+            color: #fff;
+        }
+        header {
+            background-color: #ffa200;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            text-shadow: 1px 1px 2px black;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+        header.hidden {
+            transform: translateY(-100%);
+        }
+        nav {
+            background-color: #e06500;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #1d1c1c;
+            padding: 10px;
+            text-shadow: 1px 1px 2px black;
+        }
+        main {
+            position: relative;
+            min-height: 200vh; /* Ensure content height is enough to scroll */
+            overflow: visible; /* Allow overflow for absolute positioned elements */
+        }
+        .circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            border-radius: 50%;
+            color: #1d1c1c;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            text-align: center;
+            cursor: pointer;
+            position: absolute;
+        }
+        .circle:hover {
+            background-color: #eeeded;
+        }
+        .circle.text {
+            width: calc(200px + 10 * (var(--size, 2) - 2));
+            height: calc(200px + 10 * (var(--size, 2) - 2));
+            font-size: 16px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            line-height: 1.5;
+            padding: 100px;
+            border: 2px solid rgb(212, 212, 212);
+        }
+        .circle.image {
+            width: var(--image-width);
+            height: var(--image-height);
+        }
+        .circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>Mathias Årsdag - Vores første år sammen</h1>
+    </header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../poem.html">Digt</a>
+        <a href="#">Vores første år</a>
+        
+    </nav>
+    <main>
+        <!-- 12 circles with text with custom positions -->
+        <div class="circle text" style="--size: 1; top: 90px; left: 220px;">Første Date <br>24. April 2023 <br><br> Først date og første møde. <br> Det var i mindparken, <br> og det var i hvert fald en date <br> til minderne</div>
+        <div class="circle text" style="--size: 1; top: 400px; left: 900px;">Første Kys <br> 1. Maj 2023 <br><br> Det var vores klatredate. <br> (Vores anden date). <br> Første gang for Maria <br> på motorcykel. Kørte til botanisk have, <br> kyssede i regnen</div>
+        <div class="circle text" style="--size: 1; top: 900px; left: 800px;">Galla<br>16. Juni 2023 <br> <br> Denne dag kom Mathias <br> på motorcykel i jakkesæt <br> med blomster og en ICE <br> og spurgte om vi skulle <br> være kærester <br> Maria sagde ja</div>
+        <div class="circle text" style="--size: 2; top: 1500px; left: 150px;">"Jeg elsker dig" - Mathias <br>23. September 2023 <br> <br> Mathias fortalte Maria for første <br> gang at han elsker hende</div>
+        <div class="circle text" style="--size: 3; top: 1850px; left: 150px;">"Jeg elsker dig" - Maria <br> 1. Oktober 2023 <br><br> Maria fortalte Mathias for første <br> gang at hun elsker ham</div>
+        <div class="circle text" style="--size: 1; top: 2300px; left: 900px;">Møde Mathias' mor og bror <br> 15. Oktober 2023 <br><br> Maria mødte for første <br> gang Mathias' Mor og bror <br> til aftensmad hos <br> Daniel </div>
+        <div class="circle text" style="--size: 2; top: 2700px; left: 130px;">Møde Maria's forældre <br> 15. December 2023 <br><br> Mathias mødte for <br> første gang Maria's forældre <br> og mødte Natasha ordenligt</div>
+        <div class="circle text" style="--size: 3; top: 3300px; left: 800px;">Første Skiferie <br> 7.-14. Januar 2024 <br><br> Første skiferie sammen. Vi var i Hafjell i Norge <br> med Lisbeth, Daniel, Kjeld og Patrik. <br> Maria faldt endnu mere for Mathias på denne tur.</div>
+        <div class="circle text" style="--size: 1; top: 4050px; left: 200px;">Italien - Første rejse <br> 17.-24. Marts 2024 <br><br> Første rejse alene sammen i verdenen. <br> Vi boede i La Spezia i Italien <br> ved Cinque Terrer. <br> Vi spiste is, tog billeder, og missede <br> næsten  vores fly hjem pga <br> togstrække</div>
+        <div class="circle text" style="--size: 2; top: 4600px; left: 850px;">Sommerhus med Bedsteforældre <br> 29.-31. Marts 2024 <br><br> Maria var med første gang i <br> sommerhus <br> med Mathias' bedsteforældre <br> og mor på Rømø</div>
+        <div class="circle text" style="--size: 3; top: 5000px; left: 200px;">Krakow 60-års <br> 5.-8. April 2024 <br><br> Mathias var med på familieferie til Krakow <br> for at fejre Michael's 60-års fødselsdag.</div>
+        <div class="circle text" style="--size: 1; top: 5700px; left: 500px;">Glamping årsdag <br> 16.-17. juni 2024 <br><br> Mathias og Maria tog på glamping <br> for at fejre deres første dejlige år sammen. <br> De glæder sig til mange flere</div>
+
+
+        <!-- 8 circles with images with custom positions -->
+        <div class="circle image" style="--image-width: 300px; --image-height: 300px; top: 30px; left: 600px;"><img src="pictures/tinder_Maria.jpg" alt="Image 1"></div>
+        <div class="circle image" style="--image-width: 300px; --image-height: 300px; top: 400px; left: 100px;"><img src="pictures/mathias_tinder.jpg" alt="Image 2"></div>
+        <div class="circle image" style="--image-width: 400px; --image-height: 400px; top: 700px; left: 500px;"><img src="pictures/galla.jpg" alt="Image 3"></div>
+        <div class="circle image" style="--image-width: 200px; --image-height: 200px; top: 1230px; left: 1050px;"><img src="pictures/galla_blomster.jpg" alt="Image 4"></div>
+        <div class="circle image" style="--image-width: 500px; --image-height: 500px; top: 1600px; left: 700px;"><img src="pictures/første_kys.jpg" alt="Image 5"></div>
+        <div class="circle image" style="--image-width: 250px; --image-height: 250px; top: 2550px; left: 590px;"><img src="pictures/sove.jpg" alt="Image 6"></div>
+        <div class="circle image" style="--image-width: 500px; --image-height: 500px; top: 2850px; left: 700px;"><img src="pictures/par_ski.jpg" alt="Image 7"></div>
+        <div class="circle image" style="--image-width: 350px; --image-height: 350px; top: 3300px; left: 200px;"><img src="pictures/mathias_ski.jpg" alt="Image 8"></div>
+        <div class="circle image" style="--image-width: 200px; --image-height: 200px; top: 3550px; left: 450px;"><img src="pictures/maria_ski.jpg" alt="Image 9"></div>
+        <div class="circle image" style="--image-width: 550px; --image-height: 550px; top: 3750px; left: 700px;"><img src="pictures/kys.jpg" alt="Image 10"></div>
+        <div class="circle image" style="--image-width: 300px; --image-height: 300px; top: 3900px; left: 30px;"><img src="pictures/italien_par.jpg" alt="Image 11"></div>
+        <div class="circle image" style="--image-width: 300px; --image-height: 300px; top: 5200px; left: 900px;"><img src="pictures/krakow.jpg" alt="Image 12"></div>
+    </main>
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('hidden');
+            } else {
+                header.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+    <link rel="icon" href="website_pictures/favicon.ico" type="image/x-icon">
+    <title>Mathias Årsdag - Digt</title>
+    <style>
+        body {
+            font-family: 'Salsa', cursive;
+            margin: 0;
+            padding: 0;
+            background: url('website_pictures/poem.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #fff;
+        }
+        header {
+            background-color: #ffa200;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            text-shadow: 1px 1px 2px black;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+        header.hidden {
+            transform: translateY(-100%);
+        }
+        nav {
+            background-color: #e06500;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #1d1c1c;
+            padding: 10px;
+            text-shadow: 1px 1px 2px black;
+        }
+        main {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #1d1c1c;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>Mathias Årsdag - Digt</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Digt</a>
+        <a href="year_together/year_page.html">Vores første år</a>
+    </nav>
+    <main>
+        <div class="text-box">
+            <h2>Årstidernes Mathias</h2>
+            <p>
+                Du er den klare vintersol <br>
+                og sne der knaser under mine sko <br><br>
+
+                Du er smukke forårsblomster <br>
+                og fugle der synger mig til ro <br><br>
+
+                Du er lugten af sommer-regn <br>
+                og lyse nætter der aldrig ender <br><br>
+
+                Du er orange efterårsblade <br>
+                og gummistøvler der i vandpytter plasker <br><br>
+
+                Du er en velkendt forandring <br>
+                og nye nostalgiske minder <br><br>
+
+                Du er alt dét jeg savner ved sidste år <br>
+                alt det jeg næste år håber jeg får <br><br>
+
+                Du er min kalenders yndlings-sider <br>
+                Du er det bedste ved alle årstider <br>
+            </p>
+        </div>
+    </main>
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('hidden');
+            } else {
+                header.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
